@@ -1,0 +1,35 @@
+name: hugo deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.5
+        with:
+          hugo-version: '0.65.1'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: Penguint/Penguint.github.io
+          publish_branch: master
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
