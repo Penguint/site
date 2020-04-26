@@ -8,14 +8,14 @@
 
 [Ananke](https://github.com/budparr/gohugo-theme-ananke)
 
-## Post directory
+## Posts directory
 
-[./content/posts/](./content/posts)
+[content/posts/](content/posts)
 
 ## Post format
 
 ## Deploy
 
-The website is automatically deployed at [master branch](https://github.com/Penguint/Penguint.github.io) by [GitHub Actions](./.github/workflows/action-deploy.yml).
+The website is automatically deployed at the `master` branch by [GitHub Actions](.github/workflows/action-deploy.yml).
 
 Visit the [website](https://penguint.github.io/).
