@@ -1,9 +1,9 @@
-name: hugo deploy
+name: render my site
 
 on:
   push:
     branches:
-      - source
+      - master
 
 jobs:
   build:

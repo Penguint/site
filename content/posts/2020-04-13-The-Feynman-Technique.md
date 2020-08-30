@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 费曼学习法 The Feynman Technique
-date: 2020-04-13 01:14
+date: 2020-04-13 01:14:00 +08:00
 category: 
 author: Penguint
 tags: []

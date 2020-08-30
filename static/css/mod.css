@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/FiraCode-Regular.woff')format("woff")
+}
+
+@font-face {
+    font-family: Fira Code;
+    font-style: medium;
+    font-weight: 500;
+    src: url('../fonts/FiraCode-Medium.woff')format("woff")
+}
+
+@font-face {
+    font-family: Fira Code;
+    font-weight: 600;
+    src: url('../fonts/FiraCode-SemiBold.woff')format("woff")
+}
+
+@font-face {
+    font-family: Fira Code;
+    font-style: bold;
+    font-weight: 700;
+    src: url('../fonts/FiraCode-Bold.woff')format("woff")
+}
+
+.logo {
+    font-family: Fira Code, Monaco, Consolas, Ubuntu Mono, monospace;
+    font-weight: 500;
+    letter-spacing: -.01em;
+}

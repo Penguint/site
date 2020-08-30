@@ -1,4 +1,65 @@
-baseURL = "http://penguint.github.io/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+baseURL = "http://penguint.com/"
+theme = "hello-friend-ng"
+
+[author]
+    name = "Penguint"
+
+[params]
+  customCSS = [
+    "/css/mod.css"
+  ]
+
+  # [params.portrait]
+  #   path = "/images/bspwm.png"
+  #   alt = "Portrait"
+  
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:tjpyytqz@outlook.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/Penguint"
+
+[languages]
+  [languages.en]
+    title = "Penguint"
+    homeSubtitle = "Penguint's Personal Site"
+    readOtherPosts = "Read other posts"
+    notFound = ""
+
+    [languages.en.params.logo]
+      logoText = "hello_world!"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+      
+      # logoCursorColor = "#FF79C6"
+
+  # global menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+    weight     = 1
+
+  # [[menu.main]]
+  #   identifier = "podcast"
+  #   name       = "Podcast"
+  #   url        = "/poscasts"
+  #   weight     = 2
+
+  # [[menu.main]]
+  #   identifier = "music"
+  #   name       = "Music"
+  #   url        = "/musics"
+  #   weight     = 3 
+
+  # [[menu.main]]
+  #   identifier = "design"
+  #   name       = "Design"
+  #   url        = "/designs"
+  #   weight     = 4

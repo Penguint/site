@@ -1,12 +1,12 @@
 # My Blog
 
-[My personal static blog](https://penguint.github.io/) powered by [Hugo](https://gohugo.io/). 
+[My personal static blog](https://penguint.com/) powered by [Hugo](https://gohugo.io/). 
 
 ![hugo deploy](https://github.com/Penguint/Penguint.github.io/workflows/hugo%20deploy/badge.svg)
 
 ## Theme
 
-[Ananke](https://github.com/budparr/gohugo-theme-ananke)
+[Hello Friend NG](https://github.com/rhazdon/hugo-theme-hello-friend-ng)
 
 ## Posts directory
 
@@ -18,4 +18,4 @@
 
 The website is automatically deployed at the `master` branch by [GitHub Actions](.github/workflows/action-deploy.yml).
 
-Visit the [website](https://penguint.github.io/).
+Visit the [website](https://penguint.com/).

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 证明：LCS(A, sort(A)) = LNDS(A)
-date: 2020-02-10 23:34
+title: pandoc 多文件夹合并为一个 pdf
+date: 2020-02-10 23:34:00 +08:00
 category: 
 author: Penguint
 tags: []
