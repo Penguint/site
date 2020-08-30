@@ -1,5 +1,6 @@
 baseURL = "http://penguint.com/"
 theme = "hello-friend-ng"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # For RSS only
 
 [author]
     name = "Penguint"
@@ -27,7 +28,7 @@ theme = "hello-friend-ng"
     title = "Penguint"
     homeSubtitle = "Penguint's Personal Site"
     readOtherPosts = "Read other posts"
-    notFound = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
     [languages.en.params.logo]
       logoText = "hello_world!"
