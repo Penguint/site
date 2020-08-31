@@ -1,21 +1,9 @@
-# My Blog
+# Penguint's Site
 
-[My personal static blog](https://penguint.com/) powered by [Hugo](https://gohugo.io/). 
-
-![hugo deploy](https://github.com/Penguint/Penguint.github.io/workflows/hugo%20deploy/badge.svg)
-
-## Theme
-
-[Hello Friend NG](https://github.com/rhazdon/hugo-theme-hello-friend-ng)
-
-## Posts directory
-
-[content/posts/](content/posts)
-
-## Post format
+[My personal website](https://penguint.com/) is powered by [Hugo](https://gohugo.io/) and [Hello Friend NG](https://github.com/rhazdon/hugo-theme-hello-friend-ng).
 
 ## Deploy
 
-The website is automatically deployed at the `master` branch by [GitHub Actions](.github/workflows/action-deploy.yml).
+The website is automatically deployed on GitHub Pages by [GitHub Actions](.github/workflows/action-deploy.yml).
 
-Visit the [website](https://penguint.com/).
+![hugo deploy](https://github.com/Penguint/site/workflows/hugo%20deploy/badge.svg)
