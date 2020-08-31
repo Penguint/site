@@ -6,4 +6,4 @@
 
 The website is automatically deployed on GitHub Pages by [GitHub Actions](.github/workflows/action-deploy.yml).
 
-![hugo deploy](https://github.com/Penguint/site/workflows/hugo%20deploy/badge.svg)
+![site deployment](https://github.com/Penguint/site/workflows/site%20deployment/badge.svg)
