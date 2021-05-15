@@ -18,7 +18,7 @@ excerpt_separator: <!-- more -->
 
 麻烦的解决：自动化生成板子的命令：
 ```shell
-pandoc $(ls -r -I *.md -n -E README.md,ICPC模板.md,cover.md)  -s -o ICPC.pdf --pdf-engine=xelatex -V CJKmainfont='SimSun' -N --toc
+pandoc $(ls -r -I *.md -n -E README.md,*legacy.md,cover.md) -s -o ICPC.pdf --pdf-engine=xelatex -V CJKmainfont='SimSun' -N --toc --template=ICPC_template_pandoc.tex
 ```
 
 不会用 PowerShell。不会用 VSCode。于是效率非常低的折腾了一晚上。
