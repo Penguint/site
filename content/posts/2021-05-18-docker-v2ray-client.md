@@ -29,55 +29,55 @@ $ docker pull v2fly/v2fly-core
 ```json
 // 注意 listen 需为 0.0.0.0
 // socks 和 http 入站协议分别提供 socks 和 http 代理服务
-"inbounds": [
-  {
-    "tag": "socks_proxy",
-    "port": 30808,
-    "listen": "0.0.0.0",
-    "protocol": "socks",
-    "sniffing": {
-      "enabled": true,
-      "destOverride": [
-        "http",
-        "tls"
-      ]
+  "inbounds": [
+    {
+      "tag": "socks_proxy",
+      "port": 30808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": null,
+        "address": null,
+        "clients": null
+      },
+      "streamSettings": null
     },
-    "settings": {
-      "auth": "noauth",
-      "udp": true,
-      "ip": null,
-      "address": null,
-      "clients": null
-    },
-    "streamSettings": null
-  },
-  {
-    "tag": "http_proxy",
-    "port": 30809,
-    "listen": "0.0.0.0",
-    "protocol": "http",
-    "sniffing": {
-      "enabled": false,
-      "destOverride": [
-        "http",
-        "tls"
-      ]
-    },
-    "settings": {
-      "timeout": 0,
-      "accounts": null,
-      "allowTransparent": false,
-      "userLevel": 0
+    {
+      "tag": "http_proxy",
+      "port": 30809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": false,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "timeout": 0,
+        "accounts": null,
+        "allowTransparent": false,
+        "userLevel": 0
+      }
     }
-  }
-]
+  ]
 ```
 
 运行镜像
 
 ```bash
 # 最后的 v2ray -config=/etc/v2ray/config.json 不输也行，容器内会自动运行这句
-$ sudo docker run -d --name v2ray -v /etc/v2ray/jp.json:/etc/v2ray/config.json -p 30808:30808 -p 30809:30809 v2fly/v2fly-core  v2ray -config=/etc/v2ray/config.json
+$ sudo docker run -d --name v2ray -v /etc/v2ray/jp.json:/etc/v2ray/config.json -p 30810:30808 -p 30811:30809 v2fly/v2fly-core  v2ray -config=/etc/v2ray/config.json
 ```
 
 修改环境变量，配置各软件代理后就可以使用了
